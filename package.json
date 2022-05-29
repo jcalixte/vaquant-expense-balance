@@ -1,0 +1,23 @@
+{
+  "name": "package-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "test:coverage": "vitest --coverage && rm -rf coverage",
+    "test:watch": "vitest --watch",
+    "coveralls": "vitest --coverage && coveralls < coverage/lcov.info && rm -rf coverage",
+    "lint": "prettier --write .",
+    "prepare": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "release": "release-it"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.36",
+    "release-it": "^15.0.0",
+    "vitest": "^0.13.0"
+  }
+}
