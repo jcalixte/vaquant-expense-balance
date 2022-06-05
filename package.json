@@ -18,6 +18,7 @@
   "devDependencies": {
     "@types/node": "^17.0.36",
     "@vitest/ui": "^0.14.0",
+    "c8": "^7.11.3",
     "release-it": "^15.0.0",
     "vitest": "^0.13.0"
   }
