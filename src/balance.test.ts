@@ -2,6 +2,21 @@ import { it, describe, expect } from 'vitest'
 import { Balance } from './balance'
 
 describe('balance', () => {
+  it('gives the debtors from the total expenses', () => {
+    const balance = new Balance({
+      account1: [
+        {
+          cost: 12,
+          receivers: ['account1', 'account2']
+        }
+      ]
+    })
+
+    expect(balance.debtors).toEqual(['account1'])
+  })
+
+  it('gives the creditors from the total expenses', () => {})
+
   it('equalizes one expense between 2 accounts', () => {
     const balance = new Balance({
       account1: [

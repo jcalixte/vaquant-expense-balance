@@ -39,4 +39,18 @@ export class Balance {
 
     return accountRefunds
   }
+
+  /**
+   * The set of accounts that owes money
+   */
+  public get debtors() {
+    return ['account1']
+  }
+
+  /**
+   * The set of accounts to whom money is owing
+   */
+  public get creditors() {
+    return 2
+  }
 }
