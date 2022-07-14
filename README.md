@@ -15,5 +15,11 @@
 
 ## Experiences
 
-- my head is behind my tests. I'm already thinking about how I want to minimize the number of transactions instead of just passing my test in green. Because I already know that the actual implementation will have to change.
-  - one feature can change everything in your design system
+- my mind is ahead of the tests. I'm already thinking about how I want to minimize the number of transactions instead of just passing my test in green even even though the use case isn't in the TODO list. Because I already know that the actual implementation will have to change.
+  - one feature can change everything in your design system and without it finishing in a dead end
+
+### What to do when we are in a dead end?
+
+My first trial was something like that:
+
+![first trial](docs/first-trial.png)
